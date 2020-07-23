@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+:root {
+  --primary: #22abfa; }
+
+body {
+  background-color: #efefef; }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden; }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 860px; }
+
+.shoeBackground {
+  position: relative;
+  height: 475px;
+  width: 100%;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(45deg, #0136af, #22abfa); }
+
+.shoe {
+  position: absolute;
+  width: 100%; }
+
+.info {
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1); }
+
+.shoeName {
+  padding: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .shoeName .big {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+    line-height: 1; }
+  .shoeName .new {
+    background-color: var(--primary);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s; }
+    .shoeName .new:hover {
+      letter-spacing: 1px; }
+  .shoeName .small {
+    font-weight: 600;
+    color: #444;
+    margin-top: 3px;
+    text-transform: capitalize;
+    font-size: 16px; }
+
+.shoeName, .description {
+  border-bottom: 1px solid #dadada; }
+
+.description {
+  padding: 10px 0;
+  max-height: 119px;
+  overflow: hidden; }
+
+.title {
+  font-size: 14px;
+  color: #3a3a3a;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.text {
+  color: #555;
+  font-size: 13px; }
+
+.buy-price {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.price {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1; }
+
+.buy {
+  padding: 8px 12px;
+  font-size: 12px;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: .2s; }
+  .buy:hover {
+    letter-spacing: 1.3px; }
+  .buy:hover i {
+    margin-right: 5px; }
+  .buy i {
+    margin-right: 2px;
+    transition: .2s; }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.1); } }
